@@ -1,0 +1,22 @@
+!!! 5
+%html
+	%head
+		%title Soma
+		= stylesheet_link_tag :all
+		= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'
+		= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js'
+		= javascript_include_tag 'rails'
+		= javascript_include_tag 'video'
+		= javascript_include_tag 'application'
+		= csrf_meta_tag
+		/[if lt IE 9]
+			%script{ :src => "http://html5shim.googlecode.com/svn/trunk/html5.js" }
+		:javascript
+			VideoJS.setupAllWhenReady();
+		
+%body
+
+	-flash.each do |name, msg|
+		= content_tag :div, raw(msg), :id => "flash_#{name}", :class => "flash"
+
+	= yield
