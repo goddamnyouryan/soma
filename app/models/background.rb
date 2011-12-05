@@ -9,7 +9,7 @@ class Background < ActiveRecord::Base
                               :url => ':s3_alias_url'
                               
   elsif RAILS_ENV == "production"
-    has_attached_file :thumb, :styles => { :thumb => "196x110#" },
+    has_attached_file :photo, :styles => { :thumb => "196x110#" },
                               :storage => :s3, 
                               :s3_credentials => "#{RAILS_ROOT}/config/s3-background.yml", 
                               :path => ':id/:style',
