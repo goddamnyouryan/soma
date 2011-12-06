@@ -14,13 +14,27 @@ $(document).ready(function(){
 		return false
 	});
 	
+	$("#contact-nav a.contact").mouseenter(function () {
+		if ($("div#contact").is(":hidden")) {
+			$("#contact-nav a.contact").html("Sam McGarry");
+		}
+		return false
+	});
+	
+	$("#contact-nav a.contact").mouseleave(function () {
+		if ($("div#contact").is(":hidden")) {
+			$("#contact-nav a.contact").html("Contact");
+		}
+		return false
+	});
+	
 	$("#work-nav a.work").click(function () {
 		if ($("div#videos").is(":hidden")) {
 			if ($("div#contact").is(":visible")) {
 				$("div#contact").slideUp();
 			}
 			$("div#videos").slideDown();
-			$("#work-nav a.work").html("Sean Meehan's Work");
+			$("#work-nav a.work").html("Sean Meehan");
 			$("#work-nav a.work").addClass("border-bottom");
 			
 		} else {
@@ -39,8 +53,10 @@ $(document).ready(function(){
 				$("#work-nav a.work").removeClass("border-bottom");
 			}	
 			$("div#contact").slideDown();
+			$("#contact-nav a.contact").html("Sam McGarry");
 		} else {
 			$("div#contact").slideUp();
+			$("#contact-nav a.contact").html("Contact");
 		}
 		return false
 	});
