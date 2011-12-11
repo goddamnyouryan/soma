@@ -1,15 +1,19 @@
-=link_to "<< back", admin_path
+.admin-container
 
-.video-js-box
-	%video{ :class => "video-js", :width => "840", :height => "473", :controls => true, :preload => true, :poster => "#{@video.thumb(:poster)}" }
-		%source{ :src => "#{@video.video.url}", :type => 'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' }/
-		%source{ :src => "#{@video.ogg.url}", :type => 'video/ogg; codecs="theora, vorbis"' }/
-		%object{ :id => "flash_fallback_1", :class => "vjs-flash-fallback", :width => "840", :height => "473", :type => "application/x-shockwave-flash", :data => "http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" }
-			%param{ :name => "movie", :value => "http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf"}/
-			%param{ :name => "allowfullscreen", :value => "true" }/
-			<param name="flashvars" value='config={"playlist":["#{@video.thumb(:poster)}", {"url": "#{@video.video.url}","autoPlay":false,"autoBuffering":true}]}' />
-			<img src="#{@video.thumb(:poster)}" width="640" height="264" alt="Poster Image" title="No video playback capabilities." />
-			
-=@video.title
-=link_to "edit", edit_video_path(@video)
-=link_to "delete", @video, :method => :delete, :confirm => "Are you sure you want to delete this video?"
+	%h1=@video.title
+	
+	=link_to "<< back", admin_path
+	
+	%p
+		=link_to "edit", edit_video_path(@video)
+		=link_to "delete", @video, :method => :delete, :confirm => "Are you sure you want to delete this video?"
+	
+	.video-js-box
+		%video{ :class => "video-js", :width => "840", :height => "473", :controls => true, :preload => true, :poster => "#{@video.thumb(:poster)}" }
+			%source{ :src => "#{@video.video.url}", :type => 'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' }/
+			%source{ :src => "#{@video.ogg.url}", :type => 'video/ogg; codecs="theora, vorbis"' }/
+			%object{ :id => "flash_fallback_1", :class => "vjs-flash-fallback", :width => "840", :height => "473", :type => "application/x-shockwave-flash", :data => "http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" }
+				%param{ :name => "movie", :value => "http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf"}/
+				%param{ :name => "allowfullscreen", :value => "true" }/
+				<param name="flashvars" value='config={"playlist":["#{@video.thumb(:poster)}", {"url": "#{@video.video.url}","autoPlay":false,"autoBuffering":true}]}' />
+				<img src="#{@video.thumb(:poster)}" width="640" height="264" alt="Poster Image" title="No video playback capabilities." />

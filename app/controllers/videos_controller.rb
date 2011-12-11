@@ -2,7 +2,7 @@ class VideosController < ApplicationController
   def index
     @background = Background.all.sample
     @background = @background.photo.url
-    @videos = Video.all
+    @videos = Video.all.sort_by(&:order)
   end
 
   def new
@@ -64,6 +64,18 @@ class VideosController < ApplicationController
     @videos = Video.all
     respond_to do |format|
       format.js
+    end
+  end
+  
+  def sort
+    @videos = Video.all
+    @videos.each do |video|
+      video.order = params['video'].index(video.id.to_s) + 1
+      video.save
+    end
+    respond_to do |format|
+      format.js { }
+      format.html { redirect_to @video }
     end
   end
     

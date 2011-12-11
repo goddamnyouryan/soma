@@ -6,6 +6,7 @@ Soma::Application.routes.draw do
   resources :backgrounds
   match "/admin" => 'videos#admin'
   match "/exit" => 'videos#exit'
+  match "/sort" => 'videos#sort'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

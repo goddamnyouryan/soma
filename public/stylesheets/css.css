@@ -16,6 +16,8 @@ a, a:link, a:visited, a:hover, a:focus, a:active {
 
 .clear { clear: both; }
 
+.fl { float: left; }
+
 div#container {
 	color: #fff;
 }
@@ -121,3 +123,23 @@ nav ul li #contact p a {
 	border-bottom: 1px solid #fff;
 	margin-bottom: 25px;
 }
+
+.admin-container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+ul#admin-videos {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul#admin-videos li {
+	padding: 10px;
+	background: #ccc;
+	margin-bottom: 15px;
+}
+
+.handle { float: right; }
+
+.handle:hover { cursor: move; }
