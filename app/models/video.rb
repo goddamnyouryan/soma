@@ -41,7 +41,7 @@ class Video < ActiveRecord::Base
                               :url => ':s3_alias_url'
   end
   
-  validates_attachment_content_type :thumb, :content_type => ['image/jpeg', 'image/jpg', 'image/png']
-  validates_attachment_content_type :video, :content_type => ['video/mp4']
-  validates_attachment_content_type :ogg, :content_type => ['video/ogg']
+  validates_attachment_content_type :thumb, :content_type => ['image/jpeg', 'image/jpg', 'image/png'], :on => :create
+  validates_attachment_content_type :video, :content_type => ['video/mp4'], :on => :create
+  validates_attachment_content_type :ogg, :content_type => ['video/ogg'], :on => :create
 end
