@@ -11,6 +11,8 @@ class VideosController < ApplicationController
 
   def create
     @video = Video.create(params[:video])
+    @video.order = 1
+    @video.save
     if @video.save
       redirect_to admin_path, :notice => "Video Uploaded."
     else
