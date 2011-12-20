@@ -63,7 +63,7 @@ class VideosController < ApplicationController
   end
   
   def exit
-    @videos = Video.all
+    @videos = Video.all.sort_by(&:order)
     respond_to do |format|
       format.js
     end
