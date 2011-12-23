@@ -111,6 +111,7 @@ div#videos ul li:first-child { border: none; }
 	margin: 0;
 	font-size: 24px;
 	font-weight: normal;
+	text-shadow: 1px 1px 1px #000;
 }
 
 nav ul li #contact p a {
