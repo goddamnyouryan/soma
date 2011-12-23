@@ -45,7 +45,7 @@ $(document).ready(function(){
 		return false
 	});
 	
-	$("#contact-nav a").click(function () {
+	$("#contact-nav a.contact").click(function () {
 		if ($("div#contact").is(":hidden")) {
 			if ($("div#videos").is(":visible")) {
 				$("div#videos").slideUp();

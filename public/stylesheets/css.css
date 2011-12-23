@@ -98,7 +98,7 @@ nav ul li:first-child {
 div#videos ul li:first-child { border: none; }
 
 #contact {
-	margin: 50px 0 0 300px;
+	margin: 50px 0 0 0;
 	display: none;
 }
 
