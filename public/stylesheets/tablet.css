@@ -25,10 +25,14 @@
 	
 	div#container, body { background: #000 !important; }
 	
+	.vjs-spinner { display: none !important; }
+	
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
 	
 	div#container, body { background: #000 !important; }
+	
+	.vjs-spinner { display: none !important; }
 
 }
