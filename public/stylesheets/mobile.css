@@ -1,0 +1,9 @@
+div#videos ul li img {
+	width: 50px;
+}
+
+div#container h1 {
+	margin: 0 auto;
+	padding: 25px 0 0;
+	width: 245px;
+}
