@@ -23,7 +23,7 @@
 		height: 360px;
 	}
 	
-	div#container { background: #000 !important; }
+	div#container, body { background: #000 !important; }
 	
 }
 
