@@ -9,6 +9,8 @@
 		width: 85px;
 	}
 	
+	div#container { background: #000 !important; }
+	
 	div#container h1 {
 		margin: 0 auto;
 		padding: 25px 0 0;
@@ -38,6 +40,8 @@
 }
 
 @media only screen and (orientation:landscape) {
+	
+	div#container { background: #000 !important; }
 
 	nav ul {
 		padding: 25px 0 0 5%;

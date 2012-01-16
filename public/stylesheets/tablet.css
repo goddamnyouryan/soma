@@ -23,6 +23,8 @@
 		height: 360px;
 	}
 	
+	div#container { background: #000 !important; }
+	
 }
 
 @media only screen and (min-device-width: 481px) and (orientation:landscape) {
