@@ -44,6 +44,11 @@ div#container nav ul li a {
 	display: block;
 }
 
+div#container nav ul a li img {
+  border: 5px solid rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+}
+
 div#container nav ul a li p {
 	text-transform: lowercase;
 	font-weight: normal;
@@ -54,7 +59,7 @@ div#container nav ul a li p {
 nav ul {
 	margin: 0;
 	padding: 25px 0 0 150px;
-	width: 840px;
+	width: 878px;
 }
 
 div#videos { display: none; }

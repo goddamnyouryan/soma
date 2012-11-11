@@ -20,7 +20,7 @@ class BackgroundsController < ApplicationController
   def destroy
     @background = Background.find params[:id]
     @background.destroy
-    redirect_to :backgrounds_path, :notice => "Background removed."
+    redirect_to admin_path, :notice => "Background removed."
   end
 
 end

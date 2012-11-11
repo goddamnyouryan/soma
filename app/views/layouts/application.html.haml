@@ -7,13 +7,13 @@
 			= stylesheet_link_tag 'normalize'
 			= stylesheet_link_tag 'video-js'
 			<link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px)" href="/stylesheets/mobile.css" />
-			<link rel="stylesheet" type="text/css" media="only screen and (min-width: 481px)" href="/stylesheets/tablet.css" />
+			<link rel="stylesheet" type="text/css" media="only screen and (max-width: 801px)" href="/stylesheets/tablet.css" />
 		-else
 			= stylesheet_link_tag 'http://somafilms.heroku.com/stylesheets/css.css'
 			= stylesheet_link_tag 'http://somafilms.heroku.com/stylesheets/normalize.css'
 			= stylesheet_link_tag 'http://somafilms.heroku.com/stylesheets/video-js.css'
 			<link rel="stylesheet" type="text/css" media="only screen and (max-width: 480px)" href="http://somafilms.heroku.com/stylesheets/mobile.css" />
-			<link rel="stylesheet" type="text/css" media="only screen and (min-width: 481px)" href="http://somafilms.heroku.com/stylesheets/tablet.css" />
+			<link rel="stylesheet" type="text/css" media="only screen and (max-width: 801px)" href="http://somafilms.heroku.com/stylesheets/tablet.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'
 		= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js'
@@ -27,7 +27,7 @@
 		:javascript
 			VideoJS.setupAllWhenReady();
 		= yield(:head)
-		
+
 %body
 
 	-flash.each do |name, msg|

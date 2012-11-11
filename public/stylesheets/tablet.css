@@ -1,38 +1,25 @@
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-	
+
   div#container h1 {
 		padding: 25px 0 0 25px;
 	}
-	
+
 	nav ul {
 		padding: 25px 0 0 5%;
 		width: 640px;
 	}
-	
+
 	div#videos ul li {
 		margin-right: 3%;
 		width: 22%;
 	}
-	
+
 	div#videos ul li img {
 		width: 150px;
 	}
-	
+
 	video.video-js {
 		width: 640px;
 		height: 360px;
 	}
-	
-	div#container, body { background: #000 !important; }
-	
-	.vjs-spinner { display: none !important; }
-	
-}
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-	
-	div#container, body { background: #000 !important; }
-	
 	.vjs-spinner { display: none !important; }
-
-}
