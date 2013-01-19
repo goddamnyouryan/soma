@@ -9,7 +9,7 @@ gem 'pg'
 gem 'haml'
 gem 'devise'
 gem 'paperclip'
-gem 'aws-s3'
+gem 'aws-sdk'
 
 # Use unicorn as the web server
 # gem 'unicorn'
