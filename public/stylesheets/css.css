@@ -69,6 +69,7 @@ div#container nav ul a li p {
         top: 0;
         background: rgba(0,0,0,0.6);
         opacity: 0;
+        text-transform: uppercase;
 }
 
 nav ul {
@@ -77,7 +78,7 @@ nav ul {
 	width: 1160px;
 }
 
-div#videos { display: none; }
+div#videos { display: none; padding-bottom: 25px; }
 
 div#videos ul { padding: 0; }
 
