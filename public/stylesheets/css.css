@@ -1,7 +1,7 @@
 html, body, div#container { border-width: 0px; margin: 0px; width: 100%; height: 100%; }
-a, a:link, a:visited, a:hover, a:focus, a:active { 
+a, a:link, a:visited, a:hover, a:focus, a:active {
 	outline: none !important;
-	-moz-outline-style: none !important; 
+	-moz-outline-style: none !important;
 }
 
 .group:after {
@@ -45,21 +45,36 @@ div#container nav ul li a {
 }
 
 div#container nav ul a li img {
-  border: 5px solid rgba(255, 255, 255, 0.4);
-  border-radius: 3px;
+}
+
+div#container nav ul a:hover li p {
+  opacity: 1;
 }
 
 div#container nav ul a li p {
+        -webkit-transition: opacity 0.2s ease-in-out;
+        -moz-transition: opacity 0.2s ease-in-out;
+        -ms-transition: opacity 0.2s ease-in-out;
+        -o-transition: opacity 0.2s ease-in-out;
+        transition: opacity 0.2s ease-in-out;
 	text-transform: lowercase;
 	font-weight: normal;
 	font-size: 16px;
 	text-shadow: 1px 1px 1px #000;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        padding-top: 70px;
+        height: 93px;
+        top: 0;
+        background: rgba(0,0,0,0.6);
+        opacity: 0;
 }
 
 nav ul {
 	margin: 0;
 	padding: 25px 0 0 150px;
-	width: 878px;
+	width: 1160px;
 }
 
 div#videos { display: none; }
@@ -68,12 +83,8 @@ div#videos ul { padding: 0; }
 
 div#videos ul li {
 	float: left;
-	margin-right: 18px;
-	margin-bottom: 25px;
-}
-
-div#videos ul a:nth-child(4n) li {
-	margin-right: 0;
+        position: relative;
+        height: 163px;
 }
 
 div#videos ul li p {
@@ -99,7 +110,6 @@ div#container nav ul li a.exit {
 
 nav ul li:first-child {
 	border-bottom: 1px solid #fff;
-	margin-bottom: 5px;
 }
 div#videos ul li:first-child { border: none; }
 
