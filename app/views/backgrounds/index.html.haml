@@ -3,16 +3,16 @@
 	%h1 Backgrounds
 	%h2 These will randomly shuffle on each viewing of the homepage
 	=link_to "<< back", admin_path
-	
-	-form_for @background, :html => { :multipart => true } do |f|
-	
+
+	= form_for @background, :html => { :multipart => true } do |f|
+
 		%p
 			=f.label :photo, "background image file"
 			%br/
 			=f.file_field :photo
-			
+
 		%p= f.submit "Add New Background", :disable_with => "Uploading File..."
-	
+
 	%ul#admin-videos
 		-@backgrounds.each do |background|
 			%li

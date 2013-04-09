@@ -1,5 +1,5 @@
-- form_for @video, :html => { :multipart => true } do |f|
-	
+= form_for @video, :html => { :multipart => true } do |f|
+
 	%p
 		=f.label :title, "Spot Name"
 		%br/
@@ -9,12 +9,12 @@
 		=f.label :client, "Client Name"
 		%br/
 		=f.text_field :client
-		
+
 	%p
 		=f.label :video, ".mp4 file"
 		%br/
 		=f.file_field :video
-		
+
 	%p
 		=f.label :ogg, ".ogg file"
 		%br/
@@ -24,5 +24,5 @@
 		=f.label :thumb, "thumbnail"
 		%br/
 		=f.file_field :thumb
-		
+
 	%p= f.submit :disable_with => "Uploading Files..."
