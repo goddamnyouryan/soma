@@ -1,0 +1,13 @@
+= link_to 'exit', exit_path, class: 'exit', remote: true
+
+javascript:
+	VideoJS.setupAllWhenReady();
+
+= render partial: 'video', locals: { video: @video }
+
+p style='float:left;'
+  = @video.client
+p.controls
+	=' link_to 'next', video_play_path(@next), remote: true
+	= link_to 'previous', video_play_path(@previous), remote: true, style: 'margin-right: 25px;'
+.clear

@@ -52,24 +52,24 @@ div#container nav ul a:hover li p {
 }
 
 div#container nav ul a li p {
-        -webkit-transition: opacity 0.2s ease-in-out;
-        -moz-transition: opacity 0.2s ease-in-out;
-        -ms-transition: opacity 0.2s ease-in-out;
-        -o-transition: opacity 0.2s ease-in-out;
-        transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 	text-transform: lowercase;
 	font-weight: normal;
 	font-size: 16px;
 	text-shadow: 1px 1px 1px #000;
-        position: absolute;
-        width: 100%;
-        text-align: center;
-        padding-top: 70px;
-        height: 93px;
-        top: 0;
-        background: rgba(0,0,0,0.6);
-        opacity: 0;
-        text-transform: uppercase;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding-top: 70px;
+  height: 93px;
+  top: 0;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  text-transform: uppercase;
 }
 
 nav ul {

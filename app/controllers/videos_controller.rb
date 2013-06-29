@@ -33,7 +33,7 @@ class VideosController < ApplicationController
       render :edit
     end
   end
-  
+
   def show
     @video = Video.find params[:id]
   end
@@ -41,9 +41,9 @@ class VideosController < ApplicationController
   def destroy
     @video = Video.find params[:id]
     @video.destroy
-    redirect_to admin_path, :notice => "Video Deleted."
+    redirect_to admin_path, notice: 'Video Deleted.'
   end
-  
+
   def play
     @video = Video.find params[:video_id]
     @videos = Video.all
@@ -61,14 +61,17 @@ class VideosController < ApplicationController
       format.js
     end
   end
-  
+
   def exit
     @videos = Video.all.sort_by(&:order)
     respond_to do |format|
       format.js
     end
   end
-  
+
+  def admin
+  end
+
   def sort
     @videos = Video.all
     @videos.each do |video|
@@ -80,6 +83,4 @@ class VideosController < ApplicationController
       format.html { redirect_to @video }
     end
   end
-    
-
 end
