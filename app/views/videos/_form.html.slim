@@ -11,18 +11,18 @@
 		= f.text_field :client
 
 	p
-		= f.label :video, '.mp4 file'
+		= f.label :mp4, '.mp4 file'
 		br
-		= f.file_field :video
+		= f.text_field :mp4
 
 	p
 		= f.label :ogg, '.ogg file'
 		br
-		= f.file_field :ogg
+		= f.text_field :ogg
 
 	p
 		= f.label :thumb, 'thumbnail'
 		br
-		= f.file_field :thumb
+		= f.text_field :thumb
 
 	p = f.submit disable_with: 'Uploading Files...'

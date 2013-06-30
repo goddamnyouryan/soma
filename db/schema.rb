@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111205015212) do
+ActiveRecord::Schema.define(:version => 20130630183304) do
 
   create_table "backgrounds", :force => true do |t|
     t.string   "photo_file_name"
@@ -25,20 +26,11 @@ ActiveRecord::Schema.define(:version => 20111205015212) do
     t.string   "title"
     t.string   "client"
     t.integer  "order"
-    t.string   "video_file_name"
-    t.string   "video_content_type"
-    t.integer  "video_file_size"
-    t.datetime "video_updated_at"
-    t.string   "thumb_file_name"
-    t.string   "thumb_content_type"
-    t.integer  "thumb_file_size"
-    t.datetime "thumb_updated_at"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "ogg_file_name"
-    t.string   "ogg_content_type"
-    t.integer  "ogg_file_size"
-    t.datetime "ogg_updated_at"
+    t.string   "mp4"
+    t.string   "ogg"
+    t.string   "thumb"
   end
 
 end

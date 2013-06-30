@@ -32,7 +32,7 @@
 		- Video.all.sort_by(&:order).each do |video|
 			li id="video_#{video.id}"
 				.fl
-					= image_tag video.thumb(:thumb)
+					= image_tag video.thumb
 				.fl style='margin-left: 10px;'
 					h3 = video.title
 					=' link_to 'view', video
