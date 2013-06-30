@@ -1,12 +1,15 @@
 @media only screen and (orientation:portrait) {
 
+  body div#container h1 {
+    padding: 25px 0;
+  }
+
 	nav ul {
 		padding: 25px 0 0 5%;
 		width: 290px;
 	}
 
 	div#videos ul li img {
-		width: 85px;
 	}
 
 	div#container, body { background: #000 !important; }
@@ -18,16 +21,13 @@
 	}
 
 	div#videos ul li {
-		width: 30%;
+		width: 150px;
+    height: 84px;
 	}
 
-	div#videos ul a:nth-child(3n) li {
-	}
-
-	video.video-js {
-		width: 290px;
-		height: 163px;
-	}
+  div#container nav ul a li p {
+    line-height: 84px;
+  }
 
 	div#container nav ul a li p { font-size: 11px; }
 

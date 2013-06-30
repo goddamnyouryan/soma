@@ -9,24 +9,17 @@
 	}
 
 	div#videos ul li {
-          width: 25%;
-          height: auto;
 	}
 
 	div#videos ul li img {
-          width: 100%;
-          height: auto;
 	}
 
         div#container nav ul a li p {
-          height: auto;
-          padding-top: 0;
-          padding: 23.5% 0;
         }
 
 	video.video-js {
-		width: 640px;
-		height: 360px;
+		width: 100%;
+		height: auto;
 	}
 
 	.vjs-spinner { display: none !important; }
