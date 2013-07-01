@@ -84,7 +84,7 @@ div#videos ul { padding: 0; }
 div#videos ul li {
 	float: left;
         position: relative;
-        width: 232px;
+        width: 25%;
         height: 131px;
 }
 

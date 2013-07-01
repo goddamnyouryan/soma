@@ -3,10 +3,14 @@
 		padding: 25px 0 0 25px;
 	}
 
-	nav ul {
+	nav > ul {
 		padding: 25px 0 0 5%;
 		width: 90%;
 	}
+
+  div#videos ul {
+    width: 100%;
+  }
 
 	div#videos ul li {
 	}

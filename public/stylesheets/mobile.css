@@ -21,8 +21,7 @@
 	}
 
 	div#videos ul li {
-		width: 150px;
-    height: 84px;
+          width: 50%;
 	}
 
   div#container nav ul a li p {
