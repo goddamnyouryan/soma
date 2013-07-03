@@ -1,12 +1,13 @@
 Soma::Application.routes.draw do
 
   resources :videos do
-    match 'play' => 'videos#play'
+    match 'play', to: 'videos#play'
   end
   resources :backgrounds
-  match "/admin" => 'videos#admin'
-  match "/exit" => 'videos#exit'
-  match "/sort" => 'videos#sort'
+  match '/admin', to: 'videos#admin'
+  match '/exit', to: 'videos#exit'
+  match '/sort', to: 'videos#sort'
+  match '/sitemap', to: 'videos#sitemap', defaults: { format: :xml }
 
-  root :to => "videos#index"
+  root to: 'videos#index'
 end
