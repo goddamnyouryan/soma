@@ -71,10 +71,10 @@ div#container nav ul a li p {
   text-transform: uppercase;
 }
 
-nav ul {
+nav > ul {
 	margin: 0;
-	padding: 25px 0 0 150px;
-	width: 1160px;
+	padding: 25px 0 0 5%;
+	width: 90%;
 }
 
 div#videos { display: none; padding-bottom: 25px; }
