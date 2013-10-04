@@ -73,8 +73,8 @@ div#container nav ul a li p {
 
 nav > ul {
 	margin: 0;
-	padding: 25px 0 0 5%;
-	width: 90%;
+	padding: 25px 0 0 10%;
+	width: 80%;
 }
 
 div#videos { display: none; padding-bottom: 25px; }
