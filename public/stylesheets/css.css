@@ -1,4 +1,10 @@
-html, body, div#container { border-width: 0px; margin: 0px; width: 100%; height: 100%; }
+html, body { border-width: 0px; margin: 0px; height: 100%; width: 100%; }
+div#container {
+  width: 100%;
+  min-height: 100%;
+  border-width: 0px;
+  margin: 0px;
+}
 a, a:link, a:visited, a:hover, a:focus, a:active {
 	outline: none !important;
 	-moz-outline-style: none !important;
