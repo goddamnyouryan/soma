@@ -1,4 +1,5 @@
 source 'http://rubygems.org'
+ruby '2.1.2'
 
 gem 'rails', '3.2.13'
 
@@ -13,8 +14,4 @@ group :assets do
   gem 'coffee-rails'
   gem 'compass-rails'
   gem 'uglifier'
-end
-
-group :development, :test do
-  gem 'debugger'
 end
