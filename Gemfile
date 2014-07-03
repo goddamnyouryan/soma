@@ -15,3 +15,7 @@ group :assets do
   gem 'compass-rails'
   gem 'uglifier'
 end
+
+group :development do
+  gem 'byebug'
+end

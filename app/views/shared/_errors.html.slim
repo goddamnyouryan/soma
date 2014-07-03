@@ -1,0 +1,5 @@
+- if object.errors.any?
+  ul.errors
+    - object.errors.messages.each do |attribute, messages|
+      - messages.each do |message|
+        li #{attribute.to_s.titleize} #{message}

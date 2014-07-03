@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130630183304) do
+ActiveRecord::Schema.define(:version => 20140703185509) do
 
   create_table "backgrounds", :force => true do |t|
     t.string   "photo_file_name"
@@ -28,9 +28,8 @@ ActiveRecord::Schema.define(:version => 20130630183304) do
     t.integer  "order"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "mp4"
-    t.string   "ogg"
     t.string   "thumb"
+    t.string   "vimeo_id"
   end
 
 end

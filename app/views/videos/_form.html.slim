@@ -1,3 +1,4 @@
+= render 'shared/errors', object: @video
 = form_for @video, html:  { multipart: true } do |f|
 
 	p
@@ -11,18 +12,8 @@
 		= f.text_field :client
 
 	p
-		= f.label :mp4, '.mp4 file'
+		= f.label :vimeo, 'Vimeo Video URL'
 		br
-		= f.text_field :mp4
-
-	p
-		= f.label :ogg, '.ogg file'
-		br
-		= f.text_field :ogg
-
-	p
-		= f.label :thumb, 'thumbnail'
-		br
-		= f.text_field :thumb
+		= f.text_field :vimeo
 
 	p = f.submit disable_with: 'Uploading Files...'

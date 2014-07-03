@@ -35,6 +35,9 @@ GEM
       uuidtools (~> 2.1)
     bcrypt-ruby (3.0.1)
     builder (3.0.4)
+    byebug (3.1.2)
+      columnize (~> 0.8)
+      debugger-linecache (~> 1.2)
     chunky_png (1.2.7)
     climate_control (0.0.3)
       activesupport (>= 3.0)
@@ -47,12 +50,14 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
+    columnize (0.8.9)
     compass (0.12.2)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
     compass-rails (1.0.3)
       compass (>= 0.12.2, < 0.14)
+    debugger-linecache (1.2.0)
     devise (2.2.3)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -144,6 +149,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk
+  byebug
   coffee-rails
   compass-rails
   devise
