@@ -62,11 +62,6 @@
 	div#videos ul a:nth-child(4n) li {
 	}
 
-	video.video-js {
-		width: 440px;
-		height: 248px;
-	}
-
 	div#container nav ul a li p { font-size: 11px; }
 
 }

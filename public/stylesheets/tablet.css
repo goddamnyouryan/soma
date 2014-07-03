@@ -18,12 +18,7 @@
 	div#videos ul li img {
 	}
 
-        div#container nav ul a li p {
-        }
-
-	video.video-js {
-		width: 100%;
-		height: auto;
-	}
+  div#container nav ul a li p {
+  }
 
 	.vjs-spinner { display: none !important; }
