@@ -24,6 +24,16 @@ a, a:link, a:visited, a:hover, a:focus, a:active {
 
 .fl { float: left; }
 
+@font-face {
+    font-family: 'Ray Johnson';
+    src: url('/fonts/RayJohnson.eot');
+    src: url('/fonts/RayJohnson.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/RayJohnson.woff') format('woff'),
+        url('/fonts/RayJohnson.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 div#container {
 	color: #fff;
 }
