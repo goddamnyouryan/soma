@@ -1,24 +1,9 @@
 
-  div#container h1 {
-		padding: 25px 0 0 25px;
-	}
+  body div#container h1 {
+    font-size 4em;
+  }
 
 	nav > ul {
 		padding: 25px 0 0 5%;
 		width: 90%;
 	}
-
-  div#videos ul {
-    width: 100%;
-  }
-
-	div#videos ul li {
-	}
-
-	div#videos ul li img {
-	}
-
-  div#container nav ul a li p {
-  }
-
-	.vjs-spinner { display: none !important; }

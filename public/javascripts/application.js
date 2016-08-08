@@ -1,13 +1,3 @@
-function resizeThumbnails() {
-  var images = $('#videos img');
-  var lists = $('#videos li')
-  var width = images.width();
-  var height = width / 1.78 + 'px';
-  images.css('height', height);
-  lists.find('p').css('line-height', height);
-  lists.css('height', height)
-}
-
 $(document).ready(function(){
 
         $("#work-nav a.work").mouseenter(function () {
@@ -46,7 +36,6 @@ $(document).ready(function(){
                         $("div#videos").slideDown();
                         $("#work-nav a.work").html("Sean Meehan");
                         $("#work-nav a.work").addClass("border-bottom");
-                        resizeThumbnails()
 
 
                 } else {
@@ -73,8 +62,4 @@ $(document).ready(function(){
                 return false
         });
 
-});
-
-$(window).resize(function() {
-  resizeThumbnails()
 });

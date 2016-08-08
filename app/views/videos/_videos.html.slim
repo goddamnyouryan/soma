@@ -1,7 +1,4 @@
 ul
   - @videos.each do |video|
-    = link_to video_play_path(video), remote: true do
-      li
-        = image_tag video.thumb
-        p = video.client
+    li class='butt' = render video
 .clear
