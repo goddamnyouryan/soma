@@ -1,17 +1,11 @@
 doctype html
 html
   head
-		title Soma Films by Sean Meehan
-		- if Rails.env == 'development'
-		  link rel='stylesheet' type='text/css' href='/stylesheets/css.css'
-			= stylesheet_link_tag 'normalize'
-			link rel='stylesheet' type='text/css' media='only screen and (max-width: 480px)' href='/stylesheets/mobile.css'
-			link rel='stylesheet' type='text/css' media='only screen and (max-width: 1024px)' href='/stylesheets/tablet.css'
-		- else
-			= stylesheet_link_tag 'http://somafilms.herokuapp.com/stylesheets/css.css'
-			= stylesheet_link_tag 'http://somafilms.herokuapp.com/stylesheets/normalize.css'
-			link rel='stylesheet' type='text/css' media='only screen and (max-width: 480px)' href='http://somafilms.herokuapp.com/stylesheets/mobile.css'
-			link rel='stylesheet' type='text/css' media='only screen and (max-width: 1024px)' href='http://somafilms.herokuapp.com/stylesheets/tablet.css'
+    title Soma Films by Sean Meehan
+    = stylesheet_link_tag 'css'
+    = stylesheet_link_tag 'normalize'
+    link rel='stylesheet' type='text/css' media='only screen and (max-width: 480px)' href='/stylesheets/mobile.css'
+    link rel='stylesheet' type='text/css' media='only screen and (max-width: 1024px)' href='/stylesheets/tablet.css'
 		meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
 		= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'
 		= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js'
