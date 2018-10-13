@@ -29,14 +29,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @font-face {
-    font-family: 'Ray Johnson';
-    src: url('/fonts/RayJohnson.eot');
-    src: url('/fonts/RayJohnson.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/RayJohnson.woff') format('woff'),
-        url('/fonts/RayJohnson.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'TradeGothic';
+    src: url('TradeGothic-BoldCondTwenty.eot');
+    src: local('Trade Gothic Bold Condensed No. 20'), local('TradeGothic-BoldCondTwenty'),
+        url('/fonts/TradeGothic-BoldCondTwenty.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/TradeGothic-BoldCondTwenty.woff2') format('woff2'),
+        url('/fonts/TradeGothic-BoldCondTwenty.woff') format('woff'),
+        url('/fonts/TradeGothic-BoldCondTwenty.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
 }
+
+
 
 div#container {
 	color: #fff;
@@ -52,11 +56,12 @@ div#container h1 {
   font-size: 6em;
   padding: 40px 0;
   margin: 0;
-  letter-spacing: 0.125em;
+  letter-spacing: -2px;
+  text-transform: uppercase;
 }
 
 div#container nav ul li a {
-	font-size: 24px;
+	font-size: 18px;
 	text-transform: uppercase;
 	font-weight: bold;
 	text-decoration: none;
@@ -80,7 +85,7 @@ div#videos { display: none; padding-bottom: 25px; }
 
 div#videos ul {
   padding: 0;
-  max-width: 1024px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -104,7 +109,8 @@ iframe.vimeo {
 
 h3.client {
   margin: 10px 0 0;
-  font-size: 1.5em;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 #contact {
