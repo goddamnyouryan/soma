@@ -18,16 +18,16 @@ ActiveRecord::Schema.define(:version => 20140703185509) do
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
   end
 
   create_table "videos", :force => true do |t|
     t.string   "title"
     t.string   "client"
     t.integer  "order"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.string   "thumb"
     t.string   "vimeo_id"
   end
