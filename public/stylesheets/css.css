@@ -54,9 +54,15 @@ div#container, div#container a {
 div#container h1 {
   text-align: center;
   font-size: 6em;
-  padding: 40px 0;
+  padding: 40px 0 0;
   margin: 0;
   letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+div#container h2 {
+  text-align: center;
+  margin: 0 0 50px;
   text-transform: uppercase;
 }
 
